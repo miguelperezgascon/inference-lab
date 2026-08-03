@@ -20,7 +20,7 @@ representations can be compared.
 - `theory_db.pl` — representation of theories, rules, facts and observations
 - `engine.pl` — proof search and explanation extraction
 - `reinforcement.pl` — reinforcement map computation
-- `course.pl` — course computation for facts (work in progress)
+- `course.pl` — course computation for facts
 - `consilience.pl` — evaluation of theories (work in progress)
 - `revision.pl` — (work in progress)
 
