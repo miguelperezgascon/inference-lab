@@ -21,7 +21,10 @@
 course(T, Fact, Course) :-
     findall(
         Value,
-        explanation_course(T, Fact, Value),
+        (
+            explain(T, Fact, Explanation),
+            explanation_course(T, Explanation, Value)
+        ),
         Values
     ),
     Values \= [],
@@ -58,7 +61,7 @@ best_explanation(T, Fact, BestExplanation, BestCourse) :-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% rules_product(+Theory, +Rules, -Product)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-`
+
 rules_product(_, [], 1).
 
 rules_product(T, [Rule|Rules], Product) :-
