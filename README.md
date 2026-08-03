@@ -21,7 +21,7 @@ representations can be compared.
 - `engine.pl` — proof search and explanation extraction
 - `reinforcement.pl` — reinforcement map computation
 - `course.pl` — course computation for facts
-- `consilience.pl` — evaluation of theories (work in progress)
+- `consilience.pl` — evaluation of theories
 - `revision.pl` — (work in progress)
 
 ## Requirements
