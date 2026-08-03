@@ -18,7 +18,7 @@ representations can be compared.
 ## Current modules (work in progress)wi
 
 - `theory_db.pl` — representation of theories, rules, facts and observations
-- `engine.pl` — proof search and explanation extraction (work in progress)
+- `engine.pl` — proof search and explanation extraction
 - `reinforcement.pl` — reinforcement map computation (work in progress)
 - `course.pl` — course computation for facts (work in progress)
 - `consilience.pl` — evaluation of theories (work in progress)
