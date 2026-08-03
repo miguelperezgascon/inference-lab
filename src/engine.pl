@@ -26,11 +26,22 @@ prove_all(T, [G|Gs], RulesIn, RulesOut, FactsIn, FactsOut) :-
     prove(T, G, RulesIn, RulesNext, FactsIn, FactsNext),
     prove_all(T, Gs, RulesNext, RulesOut, FactsNext, FactsOut).
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% execute
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 execute(_, times(A,B,C)) :-
+    number(A),
+    number(B),
     C is A*B.
 
 execute(_, lessthan(A,B)) :-
+    number(A),
+    number(B),
     A < B.
 
 execute(T, not(Goal)) :-
     \+ prove(T, Goal, [], _, [], _).
+
+execute(_, _) :-
+    fail.

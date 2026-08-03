@@ -172,8 +172,10 @@ Best explanation:
 ?- Data = [
        weight(obj2,5),
        safetostack(obj1,obj2)
-   ].
+   ],
 ```
+
+And then:
 
 Arithmetic mean:
 
